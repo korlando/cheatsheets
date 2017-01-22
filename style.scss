@@ -1,0 +1,62 @@
+// COLORS
+// blue-ish greys
+$dark: #252830;
+$default: #51586a;
+$light: #747e95;
+$lighter: #b7bccc;
+$lightest: #f1f4f9;
+
+// FLEX BOX
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex: $values;
+  -webkit-flex: $values;
+  -ms-flex: $values;
+  flex: $values;
+}
+@mixin justifyContent($value) {
+  -webkit-box-pack: $value;
+  -moz-box-pack: $value;
+  -webkit-justify-content: $value;
+  -ms-flex-pack: $value;
+  justify-content: $value;
+}
+@mixin alignItems($value) {
+  -webkit-box-align: $value;
+  -moz-box-align: $value;
+  -webkit-align-items: $value;
+  -ms-flex-align: $value;
+  align-items: $value;
+}
+.flexbox {
+  @include flexbox();
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.flex-center {
+  @include alignItems(center);
+}
+.flex0 {
+  @include flex(0 0 auto);
+}
+.flex1 {
+  @include flex(1 1 auto);
+}
+
+// GRADIENT
+@mixin linearGradient($color1, $color2) {
+  background-image: -webkit-linear-gradient($color1, $color2);
+  background-image: -moz-linear-gradient($color1, $color2);
+  background-image: linear-gradient($color1, $color2);
+}

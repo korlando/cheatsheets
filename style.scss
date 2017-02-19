@@ -35,6 +35,11 @@ $lightest: #f1f4f9;
   -ms-flex-align: $value;
   align-items: $value;
 }
+@mixin flexDirection($value) {
+  -webkit-flex-direction: $value;
+  -ms-flex-direction: $value;
+  flex-direction: $value;
+}
 .flexbox {
   @include flexbox();
 }

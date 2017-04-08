@@ -1,2 +1,2 @@
-# cheatsheets
-My commonly used code to copy and paste
+# Scaffold Node Application
+Starter code mimicking my typical application structure

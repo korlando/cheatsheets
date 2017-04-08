@@ -52,6 +52,9 @@ $lightest: #f1f4f9;
 .flex-center {
   @include alignItems(center);
 }
+.flex-column {
+  @include flexDirection(column);
+}
 .flex0 {
   @include flex(0 0 auto);
 }
